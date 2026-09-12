@@ -1,0 +1,17 @@
+$schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
+
+type: command
+
+display_name: ai300-lab12-training
+
+experiment_name: ai300-lab12
+
+code: .
+
+command: python train.py
+
+environment: azureml://registries/azureml/environments/sklearn-1.5/labels/latest
+
+compute: azureml:demo-instance
+
+description: AI-300 Lab 12 training job
